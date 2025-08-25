@@ -1,6 +1,7 @@
 package com.busanit501.api_rest_test_jwt_react.controller;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,12 +18,13 @@ public class SampleController {
             description = "AAA, BBB, CCC 출력 테스트")
     @GetMapping("/doA")
 //    @PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
     public List<String> doA() {
         return Arrays.asList("AAA", "BBB", "C");
     }
 
     @GetMapping("/doB")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public List<String> doB() {
         return Arrays.asList("AdminAAA", "AdminBBB", "AdminCCC");
     }
