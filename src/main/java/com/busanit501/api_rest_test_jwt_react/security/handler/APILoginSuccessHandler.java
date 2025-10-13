@@ -1,8 +1,6 @@
 package com.busanit501.api_rest_test_jwt_react.security.handler;
 
-import com.busanit501.api_rest_test_jwt_react.domain.APIUser;
 import com.busanit501.api_rest_test_jwt_react.dto.APIUserDTO;
-import com.busanit501.api_rest_test_jwt_react.repository.APlUserRepository;
 import com.busanit501.api_rest_test_jwt_react.util.JWTUtil;
 import com.google.gson.Gson;
 import jakarta.servlet.ServletException;
@@ -17,7 +15,6 @@ import org.springframework.security.web.authentication.AuthenticationSuccessHand
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 //작업 순서14
 @Log4j2

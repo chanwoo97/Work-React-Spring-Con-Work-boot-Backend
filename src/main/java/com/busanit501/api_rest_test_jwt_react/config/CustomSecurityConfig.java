@@ -1,6 +1,5 @@
 package com.busanit501.api_rest_test_jwt_react.config;
 
-import com.busanit501.api_rest_test_jwt_react.repository.APlUserRepository;
 import com.busanit501.api_rest_test_jwt_react.security.APIUserDetailsService;
 import com.busanit501.api_rest_test_jwt_react.security.filter.APILoginFilter;
 import com.busanit501.api_rest_test_jwt_react.security.filter.RefreshTokenFilter;
@@ -118,7 +117,7 @@ public class CustomSecurityConfig {
     private TokenCheckFilter tokenCheckFilter(JWTUtil jwtUtil, APIUserDetailsService apiUserDetailsService){
         return new TokenCheckFilter(apiUserDetailsService, jwtUtil);
     }
-    //    @Bean
+//    @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
 
