@@ -1,4 +1,4 @@
-package com.busanit501.api_rest_test_jwt_react.repository.search;
+package repository.search;
 
 import com.busanit501.api_rest_test_jwt_react.dto.CursorPageRequestDTO;
 import com.busanit501.api_rest_test_jwt_react.dto.PageRequestDTO;

@@ -1,10 +1,11 @@
-package com.busanit501.api_rest_test_jwt_react.repository.search;
+package repository.search;
 
 import com.busanit501.api_rest_test_jwt_react.domain.QTodo;
 import com.busanit501.api_rest_test_jwt_react.domain.Todo;
 import com.busanit501.api_rest_test_jwt_react.dto.CursorPageRequestDTO;
 import com.busanit501.api_rest_test_jwt_react.dto.PageRequestDTO;
 import com.busanit501.api_rest_test_jwt_react.dto.TodoDTO;
+import com.busanit501.api_rest_test_jwt_react.repository.search.TodoSearch;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.JPQLQuery;

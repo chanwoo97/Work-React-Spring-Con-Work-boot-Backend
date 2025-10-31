@@ -1,4 +1,4 @@
-package com.busanit501.api_rest_test_jwt_react.repository;
+package repository;
 
 import com.busanit501.api_rest_test_jwt_react.domain.Todo;
 import com.busanit501.api_rest_test_jwt_react.repository.search.TodoSearch;
